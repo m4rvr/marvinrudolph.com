@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "pnpm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@hugeicons-pro/core-stroke-rounded": "catalog:prod",
@@ -28,6 +30,7 @@
     "@types/react-dom": "catalog:dev",
     "@vitejs/plugin-react": "catalog:dev",
     "vite": "catalog:dev",
-    "vite-tsconfig-paths": "catalog:dev"
+    "vite-tsconfig-paths": "catalog:dev",
+    "wrangler": "catalog:dev"
   }
 }

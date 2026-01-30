@@ -23,6 +23,7 @@
     "zod": "catalog:prod"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "catalog:dev",
     "@types/react": "catalog:dev",
     "@types/react-dom": "catalog:dev",
     "@vitejs/plugin-react": "catalog:dev",

@@ -13,6 +13,7 @@ packages:
 catalogs:
   dev:
     '@antfu/eslint-config': ^7.2.0
+    '@cloudflare/vite-plugin': ^1.22.1
     '@eslint-react/eslint-plugin': ^2.8.1
     '@total-typescript/tsconfig': ^1.0.4
     '@types/node': ^25.1.0

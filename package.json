@@ -8,6 +8,7 @@
     "node": "24"
   },
   "scripts": {
+    "preinstall": "tsx scripts/create-npmrc.ts",
     "check-deps": "pnpx taze --interactive --recursive",
     "dev": "turbo run dev --parallel",
     "build:site": "turbo run build --filter=@p/site",

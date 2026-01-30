@@ -15,8 +15,7 @@
     },
     "deploy": {
       "cache": true,
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**"]
+      "dependsOn": ["^build"]
     }
   }
 }

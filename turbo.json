@@ -12,6 +12,11 @@
       "cache": true,
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
+    },
+    "deploy": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
     }
   }
 }

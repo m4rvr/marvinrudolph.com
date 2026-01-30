@@ -10,7 +10,8 @@
   "scripts": {
     "check-deps": "pnpx taze --interactive --recursive",
     "dev": "turbo run dev --parallel",
-    "build:site": "turbo run build --filter=@p/site"
+    "build:site": "turbo run build --filter=@p/site",
+    "deploy:site": "turbo run deploy --filter=@p/site"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",

@@ -23,6 +23,7 @@
     "eslint-plugin-format": "catalog:dev",
     "eslint-plugin-react-hooks": "catalog:dev",
     "eslint-plugin-react-refresh": "catalog:dev",
+    "tsx": "catalog:dev",
     "turbo": "catalog:dev",
     "typescript": "catalog:dev"
   }

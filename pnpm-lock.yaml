@@ -42,6 +42,9 @@ catalogs:
     eslint-plugin-react-refresh:
       specifier: ^0.4.26
       version: 0.4.26
+    tsx:
+      specifier: ^4.21.0
+      version: 4.21.0
     turbo:
       specifier: ^2.8.0
       version: 2.8.0
@@ -123,6 +126,9 @@ importers:
       eslint-plugin-react-refresh:
         specifier: catalog:dev
         version: 0.4.26(eslint@9.39.2(jiti@2.6.1))
+      tsx:
+        specifier: catalog:dev
+        version: 4.21.0
       turbo:
         specifier: catalog:dev
         version: 2.8.0

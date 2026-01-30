@@ -12,11 +12,6 @@
       "cache": true,
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
-    },
-    "start": {
-      "persistent": true,
-      "cache": false,
-      "dependsOn": ["^build"]
     }
   }
 }

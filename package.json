@@ -9,16 +9,19 @@
   },
   "scripts": {
     "check-deps": "pnpx taze --interactive --recursive",
-    "dev": "turbo run dev --parallel"
+    "dev": "turbo run dev --parallel",
+    "build:site": "turbo run build --filter=@p/site"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",
     "@eslint-react/eslint-plugin": "catalog:dev",
+    "@total-typescript/tsconfig": "catalog:dev",
+    "@types/node": "catalog:dev",
     "eslint": "catalog:dev",
-    "eslint-plugin-astro": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
     "eslint-plugin-react-hooks": "catalog:dev",
     "eslint-plugin-react-refresh": "catalog:dev",
-    "turbo": "catalog:dev"
+    "turbo": "catalog:dev",
+    "typescript": "catalog:dev"
   }
 }

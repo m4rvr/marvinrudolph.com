@@ -3,11 +3,28 @@
 @theme {
   --font-sans: 'InterVariable', sans-serif;
   --font-serif: 'Erode', serif;
+  --animate-wiggle: wiggle 2000ms infinite;
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(0);
+    }
+
+    25%,
+    75% {
+      transform: rotate(-3deg);
+    }
+
+    50% {
+      transform: rotate(3deg);
+    }
+  }
 }
 
 @layer base {
   :root {
-    @apply antialiased text-neutral-900 bg-white;
+    @apply antialiased text-neutral-900 bg-white dark:bg-neutral-950 dark:text-neutral-100;
   }
 
   body {

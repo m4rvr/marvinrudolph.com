@@ -4,14 +4,29 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
+    "@hugeicons-pro/core-stroke-rounded": "catalog:prod",
+    "@hugeicons/react": "catalog:prod",
     "@tailwindcss/vite": "catalog:prod",
-    "astro": "catalog:prod",
-    "tailwindcss": "catalog:prod"
+    "@tanstack/react-router": "catalog:prod",
+    "@tanstack/react-start": "catalog:prod",
+    "clsx": "catalog:prod",
+    "motion": "catalog:prod",
+    "react": "catalog:prod",
+    "react-dom": "catalog:prod",
+    "tailwind-merge": "catalog:prod",
+    "tailwindcss": "catalog:prod",
+    "zod": "catalog:prod"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:dev",
+    "@types/react-dom": "catalog:dev",
+    "@vitejs/plugin-react": "catalog:dev",
+    "vite": "catalog:dev",
+    "vite-tsconfig-paths": "catalog:dev"
   }
 }

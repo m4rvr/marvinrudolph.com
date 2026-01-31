@@ -19,6 +19,7 @@
     "clsx": "catalog:prod",
     "motion": "catalog:prod",
     "react": "catalog:prod",
+    "react-aria-components": "catalog:prod",
     "react-dom": "catalog:prod",
     "tailwind-merge": "catalog:prod",
     "tailwindcss": "catalog:prod",

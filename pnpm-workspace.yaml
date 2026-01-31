@@ -38,6 +38,7 @@ catalogs:
     clsx: ^2.1.1
     motion: ^12.29.2
     react: ^19.2.4
+    react-aria-components: ^1.14.0
     react-dom: ^19.2.4
     tailwind-merge: ^3.4.0
     tailwindcss: ^4.1.18

@@ -1,14 +1,27 @@
 import type { ReactNode } from 'react'
+import type { Theme } from '~/theme-context.tsx'
 import {
   createRootRoute,
   HeadContent,
   Outlet,
   Scripts,
 } from '@tanstack/react-router'
+import { createServerFn } from '@tanstack/react-start'
+import { getCookie } from '@tanstack/react-start/server'
 import { DefaultCatchBoundary, NotFound } from '~/components/index.tsx'
 import fontsCss from '~/styles/fonts.css?url'
 import tailwindCss from '~/styles/tailwind.css?url'
-import { ThemeProvider } from '~/theme-provider.tsx'
+import { ThemeProvider } from '~/theme-context.tsx'
+
+const getTheme = createServerFn().handler(() => {
+  const storedTheme = getCookie('theme') || 'system'
+
+  if (['light', 'dark', 'system'].includes(storedTheme)) {
+    return storedTheme as Theme
+  }
+
+  return 'system'
+})
 
 export const Route = createRootRoute({
   head: () => ({
@@ -34,12 +47,17 @@ export const Route = createRootRoute({
   },
   notFoundComponent: () => <NotFound />,
   component: RootComponent,
+  loader: async () => {
+    const theme = await getTheme()
+    return { theme }
+  },
 })
 
 function RootComponent() {
+  const { theme } = Route.useLoaderData()
   return (
     <RootDocument>
-      <ThemeProvider theme="light">
+      <ThemeProvider theme={theme}>
         <Outlet />
       </ThemeProvider>
     </RootDocument>
@@ -52,6 +70,7 @@ interface RootDocumentProps {
 
 function RootDocument(props: Readonly<RootDocumentProps>) {
   const { children } = props
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>

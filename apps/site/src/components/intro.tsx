@@ -13,7 +13,7 @@ export function Intro() {
 
   return (
     <>
-      <motion.div
+      <motion.header
         className="flex items-center gap-2.5 mb-5 z-10 relative"
         initial={{ opacity: 0, y: 15, filter: 'blur(5px)' }}
         animate={{ opacity: 1, y: 0, filter: 'none' }}
@@ -65,12 +65,9 @@ export function Intro() {
               transition={{ duration: 0.2, delay: 0.8, ease: 'easeOut' }}
             />
           </svg>
-          <motion.img
-            src={profilePicture}
-            alt="Marvin Rudolph – Full-Stack Engineer"
-            draggable={false}
+          <motion.div
             className={
-              cn('block will-change-transform', {
+              cn('relative rounded-full overflow-hidden p-0.5', {
                 'cursor-grab': !isDragging,
               })
             }
@@ -91,9 +88,22 @@ export function Intro() {
             onMouseUp={() => {
               setIsDragging(false)
             }}
-            width={88}
-            height={88}
-          />
+          >
+            <motion.img
+              src={profilePicture}
+              alt="Marvin Rudolph – Full-Stack Engineer"
+              draggable={false}
+              width={88}
+              height={88}
+            />
+            <motion.div
+              className="absolute inset-0 -z-1 pointer-events-none bg-accent rounded-full"
+              initial={{ scale: 0.5 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
+            >
+            </motion.div>
+          </motion.div>
           <div className={
             cn('text-2xl absolute inset-0 flex items-center justify-center size-full z-[-1] pointer-events-none overflow-hidden', {
               'animate-wiggle': isDragging,
@@ -114,7 +124,7 @@ export function Intro() {
           </h1>
           <p className="text-neutral-500 dark:text-neutral-400">Full-Stack Engineer</p>
         </div>
-      </motion.div>
+      </motion.header>
       <motion.p
         className="text-neutral-500 leading-relaxed dark:text-neutral-400"
         initial={{ opacity: 0, y: 15, filter: 'blur(5px)' }}

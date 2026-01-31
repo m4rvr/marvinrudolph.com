@@ -4,6 +4,7 @@
   --font-sans: 'InterVariable', sans-serif;
   --font-serif: 'Erode', serif;
   --animate-wiggle: wiggle 2000ms infinite;
+  --color-accent: #34E969;
 
   @keyframes wiggle {
     0%,

@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Intro } from '~/components/index.tsx'
+import { DefaultLayout } from '~/layouts/index.tsx'
 
 export const Route = createFileRoute('/')({
   component: RouteComponent,
@@ -7,13 +8,8 @@ export const Route = createFileRoute('/')({
 
 function RouteComponent() {
   return (
-    <div className="max-w-screen-sm mx-auto px-4 pt-20">
+    <DefaultLayout>
       <Intro />
-      <div className="flex items-center">
-        <button>Light</button>
-        <button>Dark</button>
-        <button>System</button>
-      </div>
-    </div>
+    </DefaultLayout>
   )
 }

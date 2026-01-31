@@ -37,7 +37,9 @@ export const Route = createRootRoute({
     links: [
       { rel: 'stylesheet', href: fontsCss },
       { rel: 'stylesheet', href: tailwindCss },
-      { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
+      { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
+      { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
+      { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
     ],
   }),
   errorComponent: (props) => {

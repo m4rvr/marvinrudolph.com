@@ -26,7 +26,7 @@ export function ThemeToggleButton(props: ThemeToggleButtonProps) {
         setTheme(theme)
       }}
       className={
-        cn('flex items-center justify-center shrink-0 size-7 cursor-pointer transition-colors text-neutral-600 dark:text-neutral-500', {
+        cn('flex items-center justify-center shrink-0 size-7 cursor-pointer transition-colors text-neutral-600 rounded-[0.625rem] dark:text-neutral-500 outline-2 outline-transparent focus-visible:outline-accent', {
           'hover:text-neutral-900 dark:hover:text-neutral-100': currentTheme !== theme,
           'text-neutral-900 dark:text-neutral-100': currentTheme === theme,
         })

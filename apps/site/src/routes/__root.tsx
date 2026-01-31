@@ -32,10 +32,12 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       { title: 'Marvin Rudolph | Full-Stack Engineer' },
+      { name: 'description', content: 'Experienced Full-Stack Engineer passionate about minimal design and animations. I love to build things that look great, feel smooth and are easy to use.' },
     ],
     links: [
       { rel: 'stylesheet', href: fontsCss },
       { rel: 'stylesheet', href: tailwindCss },
+      { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
     ],
   }),
   errorComponent: (props) => {

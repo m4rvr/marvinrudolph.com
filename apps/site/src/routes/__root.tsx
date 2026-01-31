@@ -80,7 +80,7 @@ function RootDocument(props: Readonly<RootDocumentProps>) {
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="bg-[radial-gradient(rgba(23,23,23,0.07)_1px,transparent_0)] bg-size-[1.5rem_1.5rem] bg-position-[-0.75rem_-0.75rem] after:fixed after:left-0 after:top-0 after:w-full after:h-full after:pointer-events-none after:bg-linear-to-b after:to-transparent after:from-white dark:bg-[radial-gradient(rgba(255,255,255,0.035)_1px,transparent_0)] dark:after:from-neutral-950">
         {children}
         <Scripts />
       </body>

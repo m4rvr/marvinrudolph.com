@@ -12,7 +12,7 @@ export function Intro() {
   }, [isDragging])
 
   return (
-    <>
+    <div>
       <motion.header
         className="flex items-center gap-2.5 mb-5 z-10 relative"
         initial={{ opacity: 0, y: 15, filter: 'blur(5px)' }}
@@ -144,6 +144,6 @@ export function Intro() {
         {' '}
         that look great, feel smooth and are easy to use.
       </motion.p>
-    </>
+    </div>
   )
 }

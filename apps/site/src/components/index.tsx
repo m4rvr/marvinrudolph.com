@@ -1,4 +1,5 @@
 export * from './default-catch-boundary.tsx'
+export * from './footer.tsx'
 export * from './intro.tsx'
 export * from './not-found.tsx'
 export * from './theme-toggle-button.tsx'

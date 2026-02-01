@@ -8,8 +8,8 @@ export function ThemeToggle() {
   return (
     <motion.div
       className="flex items-center gap-0.5 absolute top-6 right-6"
-      initial={{ opacity: 0, filter: 'blur(5px)' }}
-      animate={{ opacity: 1, filter: 'none' }}
+      initial={{ opacity: 0, x: 10, filter: 'blur(5px)' }}
+      animate={{ opacity: 1, x: 0, filter: 'none' }}
       transition={{ duration: 0.4, ease: 'easeOut', delay: 0.3 }}
     >
       <div

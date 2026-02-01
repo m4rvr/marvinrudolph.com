@@ -12,7 +12,7 @@ export function Intro() {
   }, [isDragging])
 
   return (
-    <div>
+    <div className="row-end-1 mb-8">
       <motion.header
         className="flex items-center gap-2.5 mb-5 z-10 relative"
         initial={{ opacity: 0, y: 15, filter: 'blur(5px)' }}

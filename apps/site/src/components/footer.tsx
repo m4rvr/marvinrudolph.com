@@ -10,12 +10,12 @@ export function Footer() {
         Marvin Rudolph
       </div>
       <nav className="flex items-center gap-4">
-        <Link
-          to="/"
+        <a
+          href="mailto:hi@marvinrudolph.com"
           className="transition-colors hover:text-neutral-900 dark:hover:text-neutral-100"
         >
-          Home
-        </Link>
+          Contact
+        </a>
         <Link
           to="/imprint"
           className="transition-colors hover:text-neutral-900 dark:hover:text-neutral-100"

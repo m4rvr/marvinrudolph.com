@@ -24,7 +24,7 @@ function RouteComponent() {
           animate={{ opacity: 1, y: 0, filter: 'none' }}
           transition={{ duration: 0.4, ease: 'easeOut', delay: 0.2 }}
         >
-          <li className="font-medium">Marvin Rudolph</li>
+          <li className="font-medium">BoldMate Marvin Rudolph</li>
           <li>Einzelunternehmen (Sole Proprietorship)</li>
           <li>Wilhelmstr. 6</li>
           <li>76703 Kraichtal</li>

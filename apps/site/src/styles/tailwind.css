@@ -4,6 +4,7 @@
   --font-sans: 'InterVariable', sans-serif;
   --font-serif: 'Erode', serif;
   --animate-wiggle: wiggle 2000ms infinite;
+  --animate-wiggle-fast: wiggle 500ms forwards;
   --color-accent: #34E969;
 
   @keyframes wiggle {
@@ -21,11 +22,27 @@
       transform: rotate(3deg);
     }
   }
+
+  @keyframes wiggle-fast {
+    0%,
+    100% {
+      transform: rotate(0);
+    }
+
+    25%,
+    75% {
+      transform: rotate(-1deg);
+    }
+
+    50% {
+      transform: rotate(1deg);
+    }
+  }
 }
 
 @layer base {
   :root {
-    @apply antialiased text-neutral-900 bg-white dark:bg-neutral-950 dark:text-neutral-100;
+    @apply antialiased text-neutral-500 bg-white dark:bg-neutral-950 dark:text-neutral-400;
   }
 
   body {

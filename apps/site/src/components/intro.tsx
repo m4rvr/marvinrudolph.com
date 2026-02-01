@@ -12,7 +12,7 @@ export function Intro() {
   }, [isDragging])
 
   return (
-    <div className="row-end-1 mb-8">
+    <div className="row-end-1 mb-5.5">
       <motion.header
         className="flex items-center gap-2.5 mb-5 z-10 relative"
         initial={{ opacity: 0, y: 15, filter: 'blur(5px)' }}
@@ -27,7 +27,7 @@ export function Intro() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 230 228"
             fill="none"
-            className="size-[105%] absolute top-0 left-0 pointer-events-none -translate-x-1/2 -translate-y-[46%] -rotate-45 scale-x-140 scale-y-90"
+            className="size-[105%] absolute top-0 left-0 pointer-events-none -translate-x-1/2 -translate-y-[46%] -rotate-45 scale-x-140 scale-y-90 text-neutral-900 dark:text-neutral-100"
           >
             <motion.path
               d="M24.8706 145.261C25.9127 145.856 26.9468 146.46 27.9727 147.074C28.5079 147.412 29.0631 147.718 29.6354 147.99C31.1882 148.648 32.7366 149.325 34.2738 150.031C35.8077 150.744 37.3129 151.514 38.7895 152.341C40.5945 153.378 42.3696 154.47 44.0955 155.634C45.8216 156.798 47.5149 158.008 49.1753 159.264C49.6713 159.677 50.0934 160.169 50.424 160.721C50.7717 161.238 50.6543 162.001 50.2875 162.834C49.752 164.048 48.6182 164.912 47.7801 164.677C47.2632 164.507 46.7993 164.208 46.4334 163.809C44.7122 162.073 42.6601 160.694 40.3963 159.752C39.7712 159.483 39.0738 159.283 38.6227 158.786C37.1808 157.188 35.1873 156.42 33.4899 155.2C32.8553 154.75 32.1965 154.334 31.5165 153.955C30.8449 153.561 30.1611 153.187 29.4933 152.785C27.1105 151.354 24.7038 149.936 22.2292 148.629C21.2061 148.046 20.3987 147.154 19.9259 146.082C19.6591 145.587 19.902 145.055 20.5576 144.802L21.2259 144.621C21.3284 144.587 21.4364 144.574 21.544 144.582L21.8463 144.588C22.2451 144.599 22.6428 144.633 23.0374 144.692C23.3539 144.742 23.6641 144.825 23.9629 144.939C24.2544 145.067 24.5412 145.207 24.8342 145.329L24.8706 145.261Z"
@@ -105,7 +105,7 @@ export function Intro() {
             </motion.div>
           </motion.div>
           <div className={
-            cn('text-2xl absolute inset-0 flex items-center justify-center size-full z-[-1] pointer-events-none overflow-hidden', {
+            cn('text-2xl absolute inset-0 flex items-center justify-center size-full z-[-1] pointer-events-none overflow-hidden text-neutral-900 dark:text-neutral-100', {
               'animate-wiggle': isDragging,
             })
           }
@@ -119,14 +119,14 @@ export function Intro() {
           </div>
         </motion.div>
         <div>
-          <h1 className="font-medium mb-px">
+          <h1 className="font-medium mb-px text-neutral-900 dark:text-neutral-100">
             Marvin Rudolph
           </h1>
-          <p className="text-neutral-500 dark:text-neutral-400">Full-Stack Engineer</p>
+          <p>Full-Stack Engineer</p>
         </div>
       </motion.header>
       <motion.p
-        className="text-neutral-500 leading-relaxed dark:text-neutral-400"
+        className="leading-relaxed"
         initial={{ opacity: 0, y: 15, filter: 'blur(5px)' }}
         animate={{ opacity: 1, y: 0, filter: 'none' }}
         transition={{ duration: 0.4, ease: 'easeOut', delay: 0.2 }}

@@ -10,7 +10,7 @@ export function DefaultLayout(props: PropsWithChildren) {
   const location = useLocation()
 
   return (
-    <div className="max-w-screen-sm mx-auto px-6 z-10 pt-20 relative min-h-screen grid grid-rows-[1fr_auto]">
+    <div className="max-w-screen-sm mx-auto px-6 z-10 pt-20 relative min-h-dvh grid grid-rows-[1fr_auto]">
       {location.pathname !== '/' && (
         <motion.div
           className="absolute top-6 left-6"

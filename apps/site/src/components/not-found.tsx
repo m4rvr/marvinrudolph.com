@@ -2,11 +2,13 @@ import { ArrowLeft02Icon } from '@hugeicons-pro/core-stroke-rounded'
 import { HugeiconsIcon } from '@hugeicons/react'
 import { Link } from '@tanstack/react-router'
 import { motion } from 'motion/react'
+import { DefaultLayout } from '~/layouts'
 
 export function NotFound() {
   return (
-    <div className="relative z-10 text-center flex items-center justify-center min-h-dvh">
+    <DefaultLayout>
       <motion.div
+        className="text-center mt-8"
         initial={{ opacity: 0, y: 15, filter: 'blur(5px)' }}
         animate={{ opacity: 1, y: 0, filter: 'none' }}
         transition={{ duration: 0.4, ease: 'easeOut' }}
@@ -20,9 +22,9 @@ export function NotFound() {
             strokeWidth={2}
             className="transition-transform group-hover:-translate-x-px"
           />
-          Back to home
+          Take me home
         </Link>
       </motion.div>
-    </div>
+    </DefaultLayout>
   )
 }

@@ -33,6 +33,74 @@ export const Route = createRootRoute({
       },
       { title: 'Marvin Rudolph | Full-Stack Engineer' },
       { name: 'description', content: 'Experienced Full-Stack Engineer passionate about minimal design and animations. I love to build things that look great, feel smooth and are easy to use.' },
+      {
+        name: 'author',
+        content: 'Marvin Rudolph',
+      },
+      {
+        name: 'keywords',
+        content: 'Full-Stack Engineer, React, TypeScript, Tailwind, Animations, Design, Minimalism, Web Development',
+      },
+      {
+        name: 'og:title',
+        content: 'Marvin Rudolph | Full-Stack Engineer',
+      },
+      {
+        name: 'og:description',
+        content: 'Experienced Full-Stack Engineer passionate about minimal design and animations. I love to build things that look great, feel smooth and are easy to use.',
+      },
+      {
+        name: 'og:image',
+        content: 'https://marvinrudolph.com/og.webp',
+      },
+      {
+        name: 'og:url',
+        content: 'https://marvinrudolph.com',
+      },
+      {
+        name: 'og:type',
+        content: 'website',
+      },
+      {
+        name: 'og:locale',
+        content: 'en_US',
+      },
+      {
+        name: 'og:image:width',
+        content: '1200',
+      },
+      {
+        name: 'og:image:height',
+        content: '630',
+      },
+      {
+        name: 'og:image:alt',
+        content: 'Marvin Rudolph | Full-Stack Engineer',
+      },
+      {
+        name: 'og:image:type',
+        content: 'image/webp',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        name: 'twitter:title',
+        content: 'Marvin Rudolph | Full-Stack Engineer',
+      },
+      {
+        name: 'twitter:description',
+        content: 'Experienced Full-Stack Engineer passionate about minimal design and animations. I love to build things that look great, feel smooth and are easy to use.',
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://marvinrudolph.com/og.webp',
+      },
+      {
+        name: 'twitter:image:alt',
+        content: 'Marvin Rudolph | Full-Stack Engineer',
+      },
     ],
     links: [
       { rel: 'stylesheet', href: fontsCss },

@@ -32,7 +32,6 @@ function RouteComponent() {
           transition={{ duration: 0.4, ease: 'easeOut', delay: 0.2 }}
         >
           <li>BoldMate Marvin Rudolph</li>
-          <li>Einzelunternehmen (Sole Proprietorship)</li>
           <li>Wilhelmstr. 6</li>
           <li>76703 Kraichtal</li>
           <li>Germany</li>
@@ -51,10 +50,18 @@ function RouteComponent() {
           </a>
         </motion.p>
         <motion.p
-          className="leading-relaxed"
+          className="mb-4"
           initial={{ opacity: 0, y: 15, filter: 'blur(5px)' }}
           animate={{ opacity: 1, y: 0, filter: 'none' }}
           transition={{ duration: 0.4, ease: 'easeOut', delay: 0.6 }}
+        >
+          Tax number: 30425/40250
+        </motion.p>
+        <motion.p
+          className="leading-relaxed"
+          initial={{ opacity: 0, y: 15, filter: 'blur(5px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'none' }}
+          transition={{ duration: 0.4, ease: 'easeOut', delay: 0.8 }}
         >
           We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.
         </motion.p>
